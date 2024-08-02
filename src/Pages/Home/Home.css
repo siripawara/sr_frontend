@@ -1,0 +1,94 @@
+
+  .image{
+    width: 100vw;
+    height: 90vh;
+  }
+
+.carousel{
+  width: 100vw;
+  height: 90vh;
+
+}
+
+.title{
+  overflow: hidden;
+}
+
+.title-container{
+  position:relative;
+  top:-50vh;
+  z-index: 5;
+  padding: 0px 20px;
+  height: 100%;
+}
+.title-container h3{
+  color: rgba(255, 255, 255, 0.7);
+  width: auto;
+  text-align: center;
+  font-size: 70px;
+}
+.title-container h4{
+  color: rgba(255, 255, 255, 0.7);
+  width: auto;
+  text-align: center;
+  font-size: 50px;
+}
+
+.employee-btn-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.employee-btn-container button{
+  padding: 10px;
+  border:2px solid rgb(39, 39, 39);
+  border-radius: 10px;
+  transition: 0.7s;
+  color: black;
+}
+
+.employee-btn-container button:hover{
+  color: white;
+  background-color: rgb(39, 39, 39);
+  border-radius: 10px;
+}
+.carosel-title{
+  font-size: 20px;
+}
+
+
+  @media (max-width:600px) {
+    
+  .image{
+    width: 100vw;
+    height: 50vh;
+    
+  }
+  .carousel{
+    width: 100vw;
+    height: 50vh;
+  
+  }
+  .title-container{
+    position:static;
+    margin-top: 40px;
+    z-index: 5;
+  }
+  .title-container h3{
+    color: rgba(7, 7, 7, 0.5);
+    width: auto;
+    text-align: center;
+    font-size: 50px;
+  }
+  .title-container h4{
+    color: rgba(6, 6, 6, 0.5);
+    width: auto;
+    text-align: center;
+    font-size: 30px;
+  }
+  .employee-btn-container{
+    margin-top: 150px;
+  }
+
+  }
