@@ -7,11 +7,11 @@
 .employee{
     width: 70vw;
     display: flex;
-  
     gap: 0px 20px;
-    margin: 20px 10px;
+    margin: 10px 10px;
     background-color: rgba(218, 215, 215, 0.5);
     padding: 10px;
+
 }
 
 .employee-grid{
@@ -35,6 +35,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+    width: 30vw;
 }
 
 .select-form{
@@ -95,7 +96,7 @@ p{
     .field-title{
         width: auto;    
     }
-    p{
-        
+    .single-field{
+        width: 80vw;
     }
 }

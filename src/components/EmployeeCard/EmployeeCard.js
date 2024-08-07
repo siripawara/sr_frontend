@@ -3,13 +3,13 @@ import './EmployeeCard.css'
 import { assets } from '../../assets/assets'
 
  
-
-function EmployeeCard({name,age,birthday,email,address,phonenumber,qualification,passportnumber,citizen,religion,videolink,profilepicture,application,passport}) {
+// single employeeCard
+function EmployeeCard({name,age,birthday,email,address,phonenumber,qualification,passportnumber,citizen,religion,videolink,profilepicture,application,passport,selected}) {
    
 
   return (
     <div className='employee'>
-    <img  className="profile-image" alt="Profile picture" src={`${assets.URL}images/${profilepicture}`}/>
+    {/* <img  className="profile-image" alt="Profile picture" src={`${assets.URL}images/${profilepicture}`}/> */}
     <div className='employee-grid'>
         <div className='single-field'><p className='field-title'>Name: </p><p>{name}</p></div>
         <div className='single-field'><p className='field-title'>Age :</p><p>{age}</p></div>
@@ -21,9 +21,10 @@ function EmployeeCard({name,age,birthday,email,address,phonenumber,qualification
         <div className='single-field'><p className='field-title'>Passport Number :</p><p>{passportnumber}</p></div>
         <div className='single-field'><p className='field-title'>Citizen :</p><p>{citizen}</p></div>
         <div className='single-field'><p className='field-title'>Religion :</p><p>{religion}</p></div>
-        <div className='single-field'><p className='field-title'>Video Link :</p><p><a href={videolink} target="_blank">{videolink}</a></p></div>
-        <div className='single-field'><p className='field-title'>Application :</p><p><img  className="application-image" src={`${assets.URL}images/${application}`}/></p></div>
-        <div className='single-field'><p className='field-title'>Passport :</p><p><img  className="passport-image" src={`${assets.URL}images/${passport}`}/></p></div>
+        <div className='single-field'><p className='field-title'>Video Link :</p><p><a href={videolink} target="_blank">Click here</a></p></div>
+        <div className='single-field'><p className='field-title'>Selected :</p><input type='checkbox' checked={selected} name="selected"/></div>
+        {/* <div className='single-field'><p className='field-title'>Application :</p><p><img  className="application-image" src={`${assets.URL}images/${application}`}/></p></div>
+        <div className='single-field'><p className='field-title'>Passport :</p><p><img  className="passport-image" src={`${assets.URL}images/${passport}`}/></p></div> */}
     </div>
     </div>
   )
